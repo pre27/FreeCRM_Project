@@ -5,8 +5,12 @@
 	<groupId>FreeCRM</groupId>
 	<artifactId>FreeCRM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<dependencies>
+<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.source-target.version>1.8</java.source-target.version>
+        <aspectj.version>1.8.4</aspectj.version>
+    </properties>
+   	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -146,7 +150,6 @@
 			<version>6.2.0</version>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 		<!-- <dependency> <groupId>net.masterthought</groupId> <artifactId>maven-cucumber-reporting</artifactId> 
 			<version>5.3.0</version> </dependency> -->
@@ -189,10 +192,8 @@
 						<artifactId>aspectjweaver</artifactId>
 						<version>${aspectj.version}</version>
 					</dependency>
-
 				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
