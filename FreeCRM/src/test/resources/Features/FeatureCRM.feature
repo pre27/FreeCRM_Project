@@ -12,3 +12,13 @@ Then Click View drop down
 And Show Filters
 Then Click New
 Then Export  
+
+Scenario: NewCasesPage Validation 
+When Clicking on New
+Then New page opens
+Then Enter Title,Company,Description,Contact,Deal,Identifier
+And select Assigned To, Type, Priority, Status
+Then Click Save
+
+
+
