@@ -4,16 +4,14 @@ package com.Base;
 	import java.io.IOException;
 	import java.util.Properties;
 	import java.util.concurrent.TimeUnit;
-	import java.util.logging.LogManager;
-
+	
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebDriverException;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.openqa.selenium.ie.InternetExplorerDriver;
 
-	import com.gargoylesoftware.htmlunit.WebConsole.Logger;
-
+	
 	public class LibraryCRM {
 
 		public static WebDriver LibDriver;

@@ -1,0 +1,294 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login into site",
+        "description": "",
+        "id": "validate-crmsite-functionality;login-into-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 28690789800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "launch browser and get url",
+            "match": {
+              "location": "CRMLoginTestSteps.launch_browser_and_get_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39448800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "to get title",
+            "match": {
+              "location": "CRMLoginTestSteps.to_get_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3862587600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter username and password",
+            "match": {
+              "location": "CRMLoginTestSteps.enter_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 468143200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clcik login",
+            "match": {
+              "location": "CRMLoginTestSteps.clcik_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "CasesPage Validation",
+        "description": "",
+        "id": "validate-crmsite-functionality;casespage-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 129500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Clicking on navigation menu",
+            "match": {
+              "location": "CasesPageStepDefinition.clicking_on_navigation_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click View drop down",
+            "match": {
+              "location": "CasesPageStepDefinition.click_view_drop_down()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Show Filters",
+            "match": {
+              "location": "CasesPageStepDefinition.show_filters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click New",
+            "match": {
+              "location": "CasesPageStepDefinition.click_new()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Export",
+            "match": {
+              "location": "CasesPageStepDefinition.export()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "ContactPage Validation",
+        "description": "",
+        "id": "validate-crmsite-functionality;contactpage-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32218196300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "to select contact in dashboard",
+            "match": {
+              "location": "CRM_ContactsTestSteps.to_select_contact_in_dashboard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12275123500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "select new",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_new()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4609988800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter firstname,lastname,email",
+            "match": {
+              "location": "CRM_ContactsTestSteps.enter_firstname_lastname_email()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1418372800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "select category",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_category()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1554112100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select status",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_status()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1256508500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "select zone",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_zone()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 763779100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "select date",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 741108700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "select month",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_month()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 746021400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "select year",
+            "match": {
+              "location": "CRM_ContactsTestSteps.select_year()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1204272400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "upload image",
+            "match": {
+              "location": "CRM_ContactsTestSteps.upload_image()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5657253000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "save the page",
+            "match": {
+              "location": "CRM_ContactsTestSteps.save_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 984963100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "take screenshot",
+            "match": {
+              "location": "CRM_ContactsTestSteps.take_screenshot()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validate crmsite functionality",
+    "description": "",
+    "id": "validate-crmsite-functionality",
+    "keyword": "Feature",
+    "uri": "FeatureCRM.feature"
+  }
+]

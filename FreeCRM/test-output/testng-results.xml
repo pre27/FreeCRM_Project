@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-07T19:05:11 BST" name="Default suite" finished-at="2020-07-07T19:05:20 BST" duration-ms="9218">
+  <suite name="Default suite" duration-ms="138683" started-at="2020-07-25T15:39:21Z" finished-at="2020-07-25T15:41:40Z">
     <groups>
     </groups>
-    <test started-at="2020-07-07T19:05:11 BST" name="Default test" finished-at="2020-07-07T19:05:20 BST" duration-ms="9218">
-      <class name="com.Testcases.LoginTC">
-        <test-method signature="openapp()[pri:0, instance:com.Testcases.LoginTC@4d910fd6]" started-at="2020-07-07T19:05:11 BST" name="openapp" finished-at="2020-07-07T19:05:20 BST" duration-ms="9139" status="PASS">
+    <test name="Default test" duration-ms="138683" started-at="2020-07-25T15:39:21Z" finished-at="2020-07-25T15:41:40Z">
+      <class name="com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="openapp" is-config="true" duration-ms="59504" started-at="2020-07-25T21:09:21Z" finished-at="2020-07-25T21:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-      </class> <!-- com.Testcases.LoginTC -->
+        <test-method status="PASS" signature="signup()[pri:1, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="signup" duration-ms="1980" started-at="2020-07-25T21:10:21Z" finished-at="2020-07-25T21:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method status="PASS" signature="addcontact()[pri:2, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="addcontact" duration-ms="67592" started-at="2020-07-25T21:10:23Z" finished-at="2020-07-25T21:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcontact -->
+        <test-method status="PASS" signature="category()[pri:3, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="category" duration-ms="1747" started-at="2020-07-25T21:11:30Z" finished-at="2020-07-25T21:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- category -->
+        <test-method status="PASS" signature="status()[pri:4, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="status" duration-ms="1063" started-at="2020-07-25T21:11:32Z" finished-at="2020-07-25T21:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method status="PASS" signature="zone()[pri:5, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="zone" duration-ms="1061" started-at="2020-07-25T21:11:33Z" finished-at="2020-07-25T21:11:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zone -->
+        <test-method status="PASS" signature="date()[pri:6, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="date" duration-ms="702" started-at="2020-07-25T21:11:34Z" finished-at="2020-07-25T21:11:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- date -->
+        <test-method status="PASS" signature="month()[pri:7, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="month" duration-ms="723" started-at="2020-07-25T21:11:35Z" finished-at="2020-07-25T21:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- month -->
+        <test-method status="PASS" signature="year()[pri:8, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="year" duration-ms="763" started-at="2020-07-25T21:11:36Z" finished-at="2020-07-25T21:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- year -->
+        <test-method status="PASS" signature="image()[pri:9, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="image" duration-ms="1580" started-at="2020-07-25T21:11:36Z" finished-at="2020-07-25T21:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- image -->
+        <test-method status="PASS" signature="scrsht()[pri:10, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="scrsht" duration-ms="1051" started-at="2020-07-25T21:11:38Z" finished-at="2020-07-25T21:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrsht -->
+        <test-method status="PASS" signature="save()[pri:11, instance:com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase@578486a3]" name="save" duration-ms="725" started-at="2020-07-25T21:11:39Z" finished-at="2020-07-25T21:11:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- save -->
+      </class> <!-- com.Testcases.CRM_ContactsTestCase$CRM_ContactTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
