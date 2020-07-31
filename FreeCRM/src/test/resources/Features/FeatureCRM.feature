@@ -11,6 +11,18 @@ When Clicking on navigation menu
 Then Click View drop down 
 And Show Filters
 Then Click New
+
+
+
+Scenario: NewCasesPage Validation 
+Then Enter Title,Company,Description,Contact,Deal,Identifier,Tags
+And select Assigned To, Type, Priority, Status
+Then Input Deadline Date and Close Date
+
+
+
+
+
 Then Export  
 
 Scenario: Create New Campaign
