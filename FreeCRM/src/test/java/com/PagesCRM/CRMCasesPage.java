@@ -40,10 +40,11 @@ public class CRMCasesPage {
 		System.out.println(ShowFiltersElement.getText());
 	}
 	
-	public void Export() {
-		
-		ExportElement.click();
-	}
+	/*
+	 * public void Export() {
+	 * 
+	 * ExportElement.click(); }
+	 */
 	
 	public void New() {
 		

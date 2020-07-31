@@ -12,7 +12,7 @@ package com.Base;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.openqa.selenium.ie.InternetExplorerDriver;
 
-	import com.gargoylesoftware.htmlunit.WebConsole.Logger;
+	//import com.gargoylesoftware.htmlunit.WebConsole.Logger;
 
 	public class LibraryCRM {
 
