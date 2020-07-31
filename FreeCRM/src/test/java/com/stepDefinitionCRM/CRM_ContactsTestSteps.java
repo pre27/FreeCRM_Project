@@ -21,6 +21,7 @@ public void to_select_contact_in_dashboard() throws InterruptedException {
 	
 	Thread.sleep(5000);
 	
+	
 	cp.contact();
 	
 	LibDriver.navigate().refresh();

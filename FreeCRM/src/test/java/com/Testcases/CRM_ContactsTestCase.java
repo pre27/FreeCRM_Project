@@ -26,6 +26,7 @@ public class CRM_ContactsTestCase {
 			launchApplication();
 		}
 		
+		
 		@Test(priority=1)
 			public void signup() {
 				CRMLoginPage  lp = new CRMLoginPage(LibDriver);
