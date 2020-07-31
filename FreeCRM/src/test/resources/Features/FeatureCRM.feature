@@ -12,3 +12,10 @@ Then Click View drop down
 And Show Filters
 Then Click New
 Then Export  
+
+Scenario: Create New Campaign
+When Logged in
+When Clicking on Campagign menu
+Then Click New Campaign
+And Enter details
+Then Click Save
