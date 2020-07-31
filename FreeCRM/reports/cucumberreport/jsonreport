@@ -1,0 +1,167 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-16T21:47:13.409Z",
+        "line": 3,
+        "name": "Login into site",
+        "description": "",
+        "id": "validate-crmsite-functionality;login-into-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10287203200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "launch browser and get url",
+            "match": {
+              "location": "com.stepDefinitionCRM.CRMLoginTestSteps.launch_browser_and_get_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15958100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "to get title",
+            "match": {
+              "location": "com.stepDefinitionCRM.CRMLoginTestSteps.to_get_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 468446600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter username and password",
+            "match": {
+              "location": "com.stepDefinitionCRM.CRMLoginTestSteps.enter_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78789000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clcik login",
+            "match": {
+              "location": "com.stepDefinitionCRM.CRMLoginTestSteps.clcik_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-16T21:47:24.381Z",
+        "line": 16,
+        "name": "DealPage Validation",
+        "description": "",
+        "id": "validate-crmsite-functionality;dealpage-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2180845400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on Deal Menu",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.click_on_deal_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 940537300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on pipeline",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.click_on_pipeline()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 570476600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Navbuttons",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.click_on_navbuttons()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275764100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on New",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.click_on_new()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 566658600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter Title and company name",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.enter_title_and_company_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1349456600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Choose closedate",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.choose_closedate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 334106800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "save",
+            "match": {
+              "location": "com.stepDefinitionCRM.DealsTest_steps.save()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validate crmsite functionality",
+    "description": "",
+    "id": "validate-crmsite-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FeatureCRM.feature",
+    "tags": []
+  }
+]
