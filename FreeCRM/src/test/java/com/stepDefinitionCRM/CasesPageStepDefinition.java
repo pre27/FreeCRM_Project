@@ -7,6 +7,9 @@ import com.PagesCRM.NewCases;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
 
 public class CasesPageStepDefinition extends LibraryCRM {
 	
@@ -15,6 +18,7 @@ public class CasesPageStepDefinition extends LibraryCRM {
 	
 	@When("Clicking on navigation menu")
 	public void clicking_on_navigation_menu() {
+
 		CP= new CRMCasesPage(LibDriver);	
 		CP.Menu();
 	}
@@ -66,6 +70,30 @@ public class CasesPageStepDefinition extends LibraryCRM {
 		  newCases.click_Save();
 	      
 	  }
+
+
+	   
+	}
+
+	@Then("Click View drop down")
+	public void click_view_drop_down() {
+	    
+	}
+
+	@Then("Show Filters")
+	public void show_filters() {
+	   
+	}
+
+	@Then("Click New")
+	public void click_new() {
+	   
+	}
+
+	@Then("Export")
+	public void export() {
+	    
+	}
 
 
 
