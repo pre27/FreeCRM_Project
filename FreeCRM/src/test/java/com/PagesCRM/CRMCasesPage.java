@@ -17,6 +17,7 @@ public class CRMCasesPage {
 	@FindBy(xpath="//*[@id='dashboard-toolbar']/div[2]/div/button[2]") 	WebElement ExportElement;
 	@FindBy(xpath="//*[@id='dashboard-toolbar']/div[2]/div/a/button/i")	WebElement NewbuttonElement;
 	
+	//COMMIT	
 	
 	public CRMCasesPage (WebDriver driver) {
 		this.Driver=driver;
