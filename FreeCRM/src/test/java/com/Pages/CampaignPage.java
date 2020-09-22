@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.sql.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -17,6 +18,7 @@ public class CampaignPage {
 	public CampaignPage(WebDriver argDriver)
 	{
 		this.pgDriver = argDriver;
+		PageFactory.initElements(argDriver, this);
 	}
 
 	

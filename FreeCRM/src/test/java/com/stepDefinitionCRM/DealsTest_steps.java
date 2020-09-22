@@ -20,7 +20,7 @@ public class DealsTest_steps extends LibraryCRM {
 	    }
 
 	    @Then("^Click on pipeline")
-	    public void click_on_pipeline(){
+	    public void click_on_pipeline() throws InterruptedException{
 	    	dpage.pline();
 	        
 	    }

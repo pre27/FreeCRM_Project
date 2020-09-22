@@ -12,6 +12,8 @@ package com.Base;
 	import org.openqa.selenium.firefox.FirefoxDriver;
 	import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 	public class LibraryCRM {
 
@@ -45,13 +47,15 @@ package com.Base;
 				String browser=prop.getProperty("browser");
 				try {
 					if (browser.equalsIgnoreCase("firefox")) {
-						System.setProperty("webdriver.gecko.driver","C:/Data/Selenium/Library/geckodriver-v0.26.0-win64/geckodriver.exe");
+						
+						System.setProperty("webdriver.gecko.driver","src/test/resources/Drivers/geckodriver.exe");
 						LibDriver=new FirefoxDriver();
 						//logger.info("Firefox Browser is launched ");
 						
 					} else if(browser.equalsIgnoreCase("chrome")){
-						System.setProperty("webdriver.chrome.driver","src/test/resources/Drivers/chromedriver.exe");
-						 LibDriver=new ChromeDriver();
+						WebDriverManager.chromedriver().setup();//Syntax error on token ".", { expected
+					    LibDriver = new ChromeDriver();
+						
 						 //logger.info("Chrome Browser is launched ");
 						  
 					} else if(browser.equalsIgnoreCase(("IE"))){

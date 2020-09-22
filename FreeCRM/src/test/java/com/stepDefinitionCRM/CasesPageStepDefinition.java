@@ -1,7 +1,7 @@
 package com.stepDefinitionCRM;
 
 import com.Base.LibraryCRM;
-import com.PagesCRM.CRMCasesPage;
+import com.PagesCRM.CRMCasesPage1;
 import com.PagesCRM.NewCases;
 
 
@@ -12,13 +12,13 @@ import io.cucumber.java.en.When;
 
 public class CasesPageStepDefinition extends LibraryCRM {
 	
-	CRMCasesPage CP;
+	CRMCasesPage1 CP;
 	NewCases newCases = new NewCases();
 	
 	@When("Clicking on navigation menu")
-	public void clicking_on_navigation_menu() {
+	public void clicking_on_navigation_menu() throws InterruptedException {
 
-		CP= new CRMCasesPage(LibDriver);	
+		CP= new CRMCasesPage1(LibDriver);	
 		CP.Menu();
 	}
 
@@ -56,7 +56,9 @@ public class CasesPageStepDefinition extends LibraryCRM {
 		  
 	     }
 	  
-	/* @Then("Export") public void export() { CP.Export(); } */
+	@Then("Export") public void export() { 
+//		CP.Export(); 
+		} 
 	 
 	  @Then("select Assigned To, Type, Priority, Status")
 	  public void select_Assigned_To_Type_Priority_Status() throws InterruptedException {

@@ -53,7 +53,8 @@ public class CRMDealsPage  {
 	}
 
 
-	public void pline() {		
+	public void pline() throws InterruptedException {	
+		Thread.sleep(4000);
 		Pipeline.click();
 		Pipelinecancel.click();
 	}

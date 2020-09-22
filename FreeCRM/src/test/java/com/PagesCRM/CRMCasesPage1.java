@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CRMCasesPage {
+public class CRMCasesPage1 {
 
 	
 	WebDriver Driver;
@@ -20,13 +20,15 @@ public class CRMCasesPage {
 	//COMMIT
 
 	
-	public CRMCasesPage (WebDriver driver) {
+	public CRMCasesPage1 (WebDriver driver) {
 		this.Driver=driver;
 		PageFactory.initElements(driver, this);
 		
 	}
 	
-	public void Menu() {
+	public void Menu() throws InterruptedException {	
+		
+		Thread.sleep(4000);
 
 		CasesMenu.click();
 	}
@@ -48,7 +50,9 @@ public class CRMCasesPage {
 	 * ExportElement.click(); }
 	 */
 	
-	public void New() {
+	public void New() throws InterruptedException {
+		
+		Thread.sleep(4000);
 		
 		NewbuttonElement.click();
 		

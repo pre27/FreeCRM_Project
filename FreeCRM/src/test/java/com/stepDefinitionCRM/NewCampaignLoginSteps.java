@@ -17,10 +17,10 @@ public class NewCampaignLoginSteps extends LibraryCRM{
 	public void logged_in() throws IOException{
 		launchApplication();
 	    // Write code here that turns the phrase above into concrete actions
-		LibDriver.findElement(By.xpath("//*[@id='ui']/div/div/form/div/div[1]/div/input")).sendKeys("deepikavillavankothai@gmail.com");
-		LibDriver.findElement(By.xpath("//*[@id='ui']/div/div/form/div/div[2]/div/input")).sendKeys("Automation");
-		LibDriver.findElement(By.xpath("//*[@id=\"ui\"]/div/div/form/div/div[3]")).click();
-    
+//		LibDriver.findElement(By.xpath("//*[@id='ui']/div/div/form/div/div[1]/div/input")).sendKeys("deepikavillavankothai@gmail.com");
+//		LibDriver.findElement(By.xpath("//*[@id='ui']/div/div/form/div/div[2]/div/input")).sendKeys("Automation");
+//		LibDriver.findElement(By.xpath("//*[@id=\"ui\"]/div/div/form/div/div[3]")).click();
+//    
 	}
 
 	@When("^Clicking on Campagign menu$")

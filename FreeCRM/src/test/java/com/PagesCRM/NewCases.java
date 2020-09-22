@@ -70,7 +70,10 @@ public class NewCases extends LibraryCRM {
 	{
 		
 		 String date = Long.toString(Calendar.getInstance().getTimeInMillis());
-		 TitleElement.sendKeys(Title); companyElement.sendKeys(Company + date);
+		 Thread.sleep(4000);
+		 TitleElement.sendKeys(Title); 
+		 
+		 companyElement.sendKeys(Company + date);
 		 contactElement.sendKeys(Integer.toString(Contact));
 		 System.out.println(Contact);
 				 
@@ -79,14 +82,30 @@ public class NewCases extends LibraryCRM {
 		 JavascriptExecutor js = (JavascriptExecutor) LibDriver;
 		 js.executeScript("window.scrollBy(0,4000)");
 				
-		 tagsElement.click(); TagsElementinput.sendKeys(Tags);
-		 TagsElementAddText.click();
-		 Thread.sleep(5000); 
-		 //TagsElementinput.click();
-		 TagsElementinput.sendKeys(Keys.SPACE); TagAdd.click();
-		 //TagsElementinput.sendKeys(Keys.ESCAPE);
-		 TagsElementinput.sendKeys(Keys.TAB); System.out.println(Tags);
-				 
+//		 tagsElement.click(); 
+//		 TagsElementinput.sendKeys(Tags);
+//		 TagsElementAddText.click();
+//		 Thread.sleep(5000); 
+//		 //TagsElementinput.click();
+//		 TagsElementinput.sendKeys(Keys.SPACE); TagAdd.click();
+//		 //TagsElementinput.sendKeys(Keys.ESCAPE);
+//		 TagsElementinput.sendKeys(Keys.TAB); System.out.println(Tags);
+//				 
+		 
+//		 tagsElement.click();
+//		 TagsElementinput.sendKeys(Tags);
+//		 Thread.sleep(4000);
+//		 TagsElementAddText.click();
+//		 Thread.sleep(5000); 
+//		 //TagsElementinput.click();
+//		 TagsElementinput.sendKeys(Keys.SPACE);
+//		 Thread.sleep(4000);
+//		 TagAdd.click();
+//		 Thread.sleep(4000);
+//		 //TagsElementinput.sendKeys(Keys.ESCAPE);
+//		 TagsElementinput.sendKeys(Keys.TAB); 
+//		 System.out.println(Tags);
+
 		// descriptionElement.click(); 
 		 descriptionElement.sendKeys(Description +  date); 
 		 System.out.println(Description);
