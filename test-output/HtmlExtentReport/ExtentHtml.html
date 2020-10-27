@@ -43,7 +43,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>ExtentReports</span>
@@ -52,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 22, 2020 09:35:37 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 27, 2020 12:38:06 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +69,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +113,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -124,10 +127,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -140,12 +143,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>24</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>20</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='4.167%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>3</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>0</span> others
                 </div>
             </div>
         </div>
@@ -163,11 +166,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>validate crmsite functionality</span>
-						<span class='test-time'>Sep 22, 2020 09:35:38 pm</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Oct 27, 2020 12:38:07 pm</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -177,7 +180,7 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 9s+158ms</span>
+	<span class='duration right label'>0h 0m 9s+912ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Login into site</div>
 	</div>
@@ -201,7 +204,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='7' status='pass'>
-	<span class='duration right label'>0h 0m 9s+24ms</span>
+	<span class='duration right label'>0h 0m 8s+359ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: DealPage Validation</div>
 	</div>
@@ -237,7 +240,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='15' status='pass'>
-	<span class='duration right label'>0h 0m 11s+239ms</span>
+	<span class='duration right label'>0h 0m 10s+628ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: CasesPage Validation</div>
 	</div>
@@ -260,32 +263,61 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='20' status='pass'>
-	<span class='duration right label'>0h 0m 28s+213ms</span>
+<div class='scenario node' test-id='20' status='fail'>
+	<span class='duration right label'>0h 0m 34s+83ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: NewCasesPage Validation</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: NewCasesPage Validation</div>
 	</div>
 	<ul class='steps'>
-		<li test-id='21' class='node then pass' status='pass'>
-			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.enter_Title_Company_Description_Contact_Deal_Identifier_Tags()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Enter Title,Company,Description,Contact,Deal,Identifier,Tags</div>
-			<div class="node-step"></div>
+		<li test-id='21' class='node then fail' status='fail'>
+			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.enter_Title_Company_Description_Contact_Deal_Identifier_Tags()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then Enter Title,Company,Description,Contact,Deal,Identifier,Tags</div>
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='title']"}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-674K7K6', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mohan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aba2ee3f0aeb3d537d4f24dc3e34ee90
+*** Element info: {Using=name, value=title}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.PagesCRM.NewCases.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(NewCases.java:74)
+	at com.stepDefinitionCRM.CasesPageStepDefinition.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(CasesPageStepDefinition.java:54)
+	at ✽.Enter Title,Company,Description,Contact,Deal,Identifier,Tags(file:///C:/Users/mohan/git/FreeCRM_Project/src/test/resources/Features/FeatureCRM.feature:35)
+</textarea>
 		</li>
-		<li test-id='22' class='node and pass' status='pass'>
-			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.select_Assigned_To_Type_Priority_Status()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And select Assigned To, Type, Priority, Status</div>
-			<div class="node-step"></div>
+		<li test-id='22' class='node and skip' status='skip'>
+			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.select_Assigned_To_Type_Priority_Status()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select Assigned To, Type, Priority, Status</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='23' class='node then pass' status='pass'>
-			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.input_Deadline_Date_and_Close_Date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Input Deadline Date and Close Date</div>
-			<div class="node-step"></div>
+		<li test-id='23' class='node then skip' status='skip'>
+			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.input_Deadline_Date_and_Close_Date()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Input Deadline Date and Close Date</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='24' class='node then pass' status='pass'>
-			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.export()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Export</div>
-			<div class="node-step"></div>
+		<li test-id='24' class='node then skip' status='skip'>
+			<div class="step-name" title="com.stepDefinitionCRM.CasesPageStepDefinition.export()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Export</div>
+			<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='25' status='pass'>
-	<span class='duration right label'>0h 0m 7s+588ms</span>
+	<span class='duration right label'>0h 0m 7s+364ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Create New Campaign</div>
 	</div>
@@ -334,7 +366,91 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 27, 2020 12:38:36 pm</td>
+										<td class='linked' test-id='21'>Then Enter Title,Company,Description,Contact,Deal,Identifier,Tags</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='title']"}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-674K7K6', ip: '192.168.1.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\mohan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aba2ee3f0aeb3d537d4f24dc3e34ee90
+*** Element info: {Using=name, value=title}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
+	at com.PagesCRM.NewCases.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(NewCases.java:74)
+	at com.stepDefinitionCRM.CasesPageStepDefinition.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(CasesPageStepDefinition.java:54)
+	at ✽.Enter Title,Company,Description,Contact,Deal,Identifier,Tags(file:///C:/Users/mohan/git/FreeCRM_Project/src/test/resources/Features/FeatureCRM.feature:35)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -360,19 +476,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 22, 2020 09:35:37 pm</div>
+					<div class='panel-lead'>Oct 27, 2020 12:38:06 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 22, 2020 09:36:44 pm</div>
+			 		<div class='panel-lead'>Oct 27, 2020 12:39:18 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 6s+465ms</div>
+					<div class='panel-lead'>0h 1m 11s+794ms</div>
 				</div>
 			</div>
 		</div>
@@ -384,38 +500,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 5,
-				passChild: 5,
-				failChild: 0,
+				passChild: 4,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				grandChildCount: 24,
-				passGrandChild: 24,
-				failGrandChild: 0,
+				passGrandChild: 20,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 3,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 4,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "validate crmsite functionality":65.259
+			        "validate crmsite functionality":70.441
 			};
 		</script>
 	

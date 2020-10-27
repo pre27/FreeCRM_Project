@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-09-22T20:35:38.546Z",
+        "start_timestamp": "2020-10-27T12:38:07.672Z",
         "line": 3,
         "name": "Login into site",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8683062100,
+              "duration": 9412167300,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 13964200,
+              "duration": 7977700,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 414511700,
+              "duration": 430847700,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 103752800,
+              "duration": 127712500,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-09-22T20:35:47.874Z",
+        "start_timestamp": "2020-10-27T12:38:17.786Z",
         "line": 17,
         "name": "DealPage Validation",
         "description": "",
@@ -72,7 +72,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1537654200,
+              "duration": 1078284900,
               "status": "passed"
             },
             "line": 18,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 4420685700,
+              "duration": 4342080100,
               "status": "passed"
             },
             "line": 19,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 504649400,
+              "duration": 440893700,
               "status": "passed"
             },
             "line": 20,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 294212400,
+              "duration": 206955000,
               "status": "passed"
             },
             "line": 21,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 547535500,
+              "duration": 529583800,
               "status": "passed"
             },
             "line": 22,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 1330683600,
+              "duration": 1391818100,
               "status": "passed"
             },
             "line": 23,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 383472000,
+              "duration": 366529300,
               "status": "passed"
             },
             "line": 24,
@@ -157,7 +157,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-09-22T20:35:56.905Z",
+        "start_timestamp": "2020-10-27T12:38:26.153Z",
         "line": 26,
         "name": "CasesPage Validation",
         "description": "",
@@ -167,7 +167,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4145598100,
+              "duration": 4133301700,
               "status": "passed"
             },
             "line": 27,
@@ -179,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 100730900,
+              "duration": 91881100,
               "status": "passed"
             },
             "line": 28,
@@ -191,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 218299800,
+              "duration": 239875300,
               "status": "passed"
             },
             "line": 29,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 6772926500,
+              "duration": 6159922900,
               "status": "passed"
             },
             "line": 30,
@@ -216,7 +216,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-09-22T20:36:08.152Z",
+        "start_timestamp": "2020-10-27T12:38:36.787Z",
         "line": 34,
         "name": "NewCasesPage Validation",
         "description": "",
@@ -226,8 +226,9 @@
         "steps": [
           {
             "result": {
-              "duration": 5907070700,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027title\u0027]\"}\n  (Session info: chrome\u003d86.0.4240.111)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-674K7K6\u0027, ip: \u0027192.168.1.65\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\mohan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57150}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba2ee3f0aeb3d537d4f24dc3e34ee90\n*** Element info: {Using\u003dname, value\u003dtitle}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\r\n\tat com.PagesCRM.NewCases.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(NewCases.java:74)\r\n\tat com.stepDefinitionCRM.CasesPageStepDefinition.enter_Title_Company_Description_Contact_Deal_Identifier_Tags(CasesPageStepDefinition.java:54)\r\n\tat ✽.Enter Title,Company,Description,Contact,Deal,Identifier,Tags(file:///C:/Users/mohan/git/FreeCRM_Project/src/test/resources/Features/FeatureCRM.feature:35)\r\n",
+              "duration": 34071360000,
+              "status": "failed"
             },
             "line": 35,
             "name": "Enter Title,Company,Description,Contact,Deal,Identifier,Tags",
@@ -238,8 +239,7 @@
           },
           {
             "result": {
-              "duration": 20692419500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 36,
             "name": "select Assigned To, Type, Priority, Status",
@@ -250,8 +250,8 @@
           },
           {
             "result": {
-              "duration": 1610984900,
-              "status": "passed"
+              "duration": 1049800,
+              "status": "skipped"
             },
             "line": 37,
             "name": "Input Deadline Date and Close Date",
@@ -262,8 +262,8 @@
           },
           {
             "result": {
-              "duration": 997600,
-              "status": "passed"
+              "duration": 944200,
+              "status": "skipped"
             },
             "line": 38,
             "name": "Export",
@@ -275,7 +275,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-09-22T20:36:36.376Z",
+        "start_timestamp": "2020-10-27T12:39:10.932Z",
         "line": 40,
         "name": "Create New Campaign",
         "description": "",
@@ -285,7 +285,7 @@
         "steps": [
           {
             "result": {
-              "duration": 709144700,
+              "duration": 528060000,
               "status": "passed"
             },
             "line": 41,
@@ -297,7 +297,7 @@
           },
           {
             "result": {
-              "duration": 2152304000,
+              "duration": 2141616600,
               "status": "passed"
             },
             "line": 42,
@@ -309,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 1126659900,
+              "duration": 1137208200,
               "status": "passed"
             },
             "line": 43,
@@ -321,7 +321,7 @@
           },
           {
             "result": {
-              "duration": 3494601600,
+              "duration": 3464145800,
               "status": "passed"
             },
             "line": 44,
@@ -333,7 +333,7 @@
           },
           {
             "result": {
-              "duration": 104719400,
+              "duration": 90758500,
               "status": "passed"
             },
             "line": 45,
